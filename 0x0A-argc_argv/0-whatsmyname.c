@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * main - prints programe name followed by a new line
  * @argc: int
@@ -7,9 +7,10 @@
  * Return: 0
  */
 
-int main(int argc, char const *argv[])
+int main(int argc,__attribute__((unused)) ,char const *argv[])
 {
 	(void)argc;
-	printf("%s\n", argv[0]);
+	printf("%s\n", argv);
+
 	return (0);
 }
